@@ -1,0 +1,25 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"formatter": {
+		"lineEnding": "crlf",
+		"formatWithErrors": true
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingComma": "all",
+			"quoteStyle": "single",
+			"lineEnding": "crlf"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	}
+}
