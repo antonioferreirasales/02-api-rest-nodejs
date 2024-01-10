@@ -1,17 +1,29 @@
 {
 	"name": "02-api-rest-nodejs",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A API developed for study purposes",
 	"main": "index.js",
+	"engines": {
+		"node": ">=20"
+	},
 	"scripts": {
 		"dev": "tsx watch src/server.ts",
 		"knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
 		"test": "vitest",
 		"build": "tsup src --out-dir build"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": ["API", "transactions", "study case"],
+	"author": "Antônio Sales",
 	"license": "ISC",
+	"dependencies": {
+		"@fastify/cookie": "^9.2.0",
+		"@types/supertest": "^6.0.2",
+		"dotenv": "^16.3.1",
+		"fastify": "^4.25.2",
+		"knex": "^3.1.0",
+		"pg": "^8.11.3",
+		"zod": "^3.22.4"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "1.4.1",
 		"@types/node": "^20.10.6",
@@ -19,15 +31,7 @@
 		"tsup": "^8.0.1",
 		"tsx": "^4.7.0",
 		"typescript": "^5.3.3",
-		"vitest": "^1.1.3"
-	},
-	"dependencies": {
-		"@fastify/cookie": "^9.2.0",
-		"@types/supertest": "^6.0.2",
-		"dotenv": "^16.3.1",
-		"fastify": "^4.25.2",
-		"knex": "^3.1.0",
-		"sqlite3": "^5.1.7-rc.0",
-		"zod": "^3.22.4"
+		"vitest": "^1.1.3",
+		"sqlite3": "^5.1.7-rc.0"
 	}
 }
